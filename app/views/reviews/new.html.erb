@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-offset-3">
+
+      <%= simple_form_for @review do |f| %>
+      <%= f.input :content, placeholder: "Great place"  %>
+      <%= f.submit "Post review", class: "btn btn-primary" %>
+      <% end  %>
+
+      <form action="/reviews" method="post">
+
+
+
+      </form>
+
+
+
+    </div>
+  </div>
+</div>

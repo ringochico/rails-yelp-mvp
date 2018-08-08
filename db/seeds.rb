@@ -1,44 +1,47 @@
-Restaurant.destory_all
+puts 'Cleaning database...'
+Restaurant.destroy_all
+
+puts 'Creating restaurants...'
 restaurants_attributes = [
   {
-    name: "Ru"
-    address: "123 IDGAF"
-    phonenumber: 911
-    category: "Belgian"
+    name:         'Orval',
+    address:      'Brussels',
+    phone_number: '122',
+    category:     'belgian'
   },
-    {
-    name: "Lu"
-    address: "1 IDGAF"
-    phonenumber: 911
-    category: "Belgian"
+  {
+    name:        'Rouge',
+    address:      'Paris',
+    phone_number: '911',
+    category:     'french'
   },
-    {
-    name: "Du"
-    address: "123 IDGAF"
-    phonenumber: 911
-    category: "Belgian"
+  {
+    name:         'Chi',
+    address:      'Shanghai',
+    phone_number: '234',
+    category:     'chinese'
   },
-    {
-    name: "Qu"
-    address: "123 IDGAF"
-    phonenumber: 911
-    category: "Belgian"
+  {
+    name:         'Cinque',
+    address:      'Bologna',
+    phone_number: '345',
+    category:     'italian'
+  },
+  {
+    name:         'Tori',
+    address:      'Tokyo',
+    phone_number: '698',
+    category:     'japanese'
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ]
+Restaurant.create!(restaurants_attributes)
+puts 'Finished!'
+
+
+
+
+
+
+
+
+
